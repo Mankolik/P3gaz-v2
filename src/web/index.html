@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>P3gaz Sim Canvas</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="toolbar">
+        <div class="toolbar__title">P3gaz Headless Sim Canvas</div>
+        <div class="toolbar__actions">
+          <button id="spawn-track" type="button">Spawn Track (;</button>
+          <span class="toolbar__hint">Press <strong>;</strong> to spawn</span>
+        </div>
+      </header>
+      <section class="canvas-shell">
+        <canvas id="sim-canvas" width="960" height="640"></canvas>
+      </section>
+    </main>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

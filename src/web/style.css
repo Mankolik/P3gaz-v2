@@ -1,0 +1,83 @@
+:root {
+  color-scheme: dark;
+  font-family: "Inter", system-ui, sans-serif;
+  background-color: #0d1117;
+  color: #e6edf3;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #1b2a3a, #0b0f14 60%);
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  gap: 16px;
+  padding: 16px 24px 24px;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.toolbar__title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: 0.02em;
+}
+
+.toolbar__actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.toolbar__actions button {
+  background: #1f6feb;
+  border: none;
+  color: #f0f6fc;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.toolbar__actions button:hover {
+  background: #2a7bf2;
+}
+
+.toolbar__hint {
+  font-size: 0.85rem;
+  color: #9da7b3;
+}
+
+.canvas-shell {
+  flex: 1;
+  background: rgba(8, 12, 18, 0.9);
+  border: 1px solid #1f2a36;
+  border-radius: 12px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#sim-canvas {
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+  max-height: 720px;
+  background: #0b1118;
+  border-radius: 8px;
+  border: 1px solid #1f2a36;
+}
