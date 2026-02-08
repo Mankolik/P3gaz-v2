@@ -1,4 +1,5 @@
 import type { Degrees, EnuMeters, GeoJsonPolygon, LatLonAlt } from "../geo/GeoTypes";
+import type { TrackStatus } from "./TrackStatus";
 
 export type NauticalMiles = number;
 export type Knots = number;
@@ -165,6 +166,7 @@ export interface Track {
   airline?: Airline;
   state: TrackState;
   intent?: TrackIntent;
+  status?: TrackStatus;
   history?: TrackHistoryEntry[];
   // # intent: consolidate state, intent, and metadata per aircraft
   // # future: add multi-sensor fusion and handoff lifecycle
